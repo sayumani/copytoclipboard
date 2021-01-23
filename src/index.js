@@ -6,12 +6,6 @@ import styles from './styles.module.css'
 import 'react-toastify/dist/ReactToastify.css'
 
 class CopyToCLipBoard extends React.Component {
-  constructor() {
-    super()
-  }
-
-  copyToClipBoard = async (copyMe) => {}
-
   onClick = async (event) => {
     const { innerText } = event.target
     console.log(event.target.innerText)
@@ -26,7 +20,7 @@ class CopyToCLipBoard extends React.Component {
   render() {
     const defaultText = 'please provide text'
     let { height, width, text } = this.props
-    height = height ? text : '40px'
+    height = height ? height : '40px'
     width = width ? width : 'fit-content'
     return (
       <>
