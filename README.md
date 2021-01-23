@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save copytoclipboard
+npm install --save copy-to-clipboard-react
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ class Example extends Component {
   render() {
     return (
       <CopyToCLipBoard
-        text={'npm install copytovlipboard'}
+        text={'npm install copy-to-clipboard-react'}
         height={'50%'}
         width={'50%'}
       />
