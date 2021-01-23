@@ -20,7 +20,13 @@ import 'copytoclipboard/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <CopyToCLipBoard />
+    return (
+      <CopyToCLipBoard
+        text={'npm install copytovlipboard'}
+        height={'50%'}
+        width={'50%'}
+      />
+    )
   }
 }
 ```
