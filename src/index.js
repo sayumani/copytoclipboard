@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css'
 class CopyToCLipBoard extends React.Component {
   onClick = async (event) => {
     const { innerText } = event.target
-    console.log(event.target.innerText)
     try {
       await navigator.clipboard.writeText(innerText)
       toast.success('Copied!')
