@@ -2,7 +2,7 @@
 
 > library for copying text to clip board
 
-[![NPM](https://img.shields.io/npm/v/copytoclipboard.svg)](https://www.npmjs.com/package/copytoclipboard) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/copytoclipboard.svg)](https://www.npmjs.com/package/copy-to-clipboard-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
