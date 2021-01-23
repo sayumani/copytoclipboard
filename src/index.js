@@ -31,7 +31,7 @@ class CopyToCLipBoard extends React.Component {
     return (
       <>
         <div
-          className={styles.test}
+          className={styles.copy_container}
           style={{ height: height, width: width }}
           onClick={this.onClick}
         >

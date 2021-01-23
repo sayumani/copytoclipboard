@@ -1,5 +1,5 @@
 /* add css module styles here (optional) */
-.test {
+.copy_container {
   margin: 2em;
   padding: 0.5em;
   border: 1px #cccccc solid;
@@ -8,9 +8,12 @@
   width: 100%;
   height: 40px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-div.test:hover {
+div.copy_container:hover {
   background-color: #d0ffc4;
 }
 
@@ -18,7 +21,7 @@ div.test:hover {
   display: none;
 }
 
-div.test:hover > .copy_icon {
+div.copy_container:hover > .copy_icon {
   display: inline;
-  margin-left: 5px;
+  margin-left: 15px;
 }
