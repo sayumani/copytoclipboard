@@ -1,7 +1,9 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React, { Fragment } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
+import styles from './styles.module.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 class CopyToCLipBoard extends React.Component {
   constructor() {
@@ -15,9 +17,9 @@ class CopyToCLipBoard extends React.Component {
     console.log(event.target.innerText)
     try {
       await navigator.clipboard.writeText(innerText)
-      alert('Copied!')
+      toast.success('Copied!')
     } catch (err) {
-      alert('Failed to copy!')
+      toast.error('Failed to copy!')
     }
   }
 
@@ -27,16 +29,26 @@ class CopyToCLipBoard extends React.Component {
     height = height ? text : '40px'
     width = width ? width : 'fit-content'
     return (
-      <div
-        className={styles.test}
-        style={{ height: height, width: width }}
-        onClick={this.onClick}
-      >
-        {text ? text : defaultText}
-        <span className={styles.copy_icon}>
-          <FontAwesomeIcon icon={faCopy} />
-        </span>
-      </div>
+      <>
+        <div
+          className={styles.test}
+          style={{ height: height, width: width }}
+          onClick={this.onClick}
+        >
+          {text ? text : defaultText}
+          <span className={styles.copy_icon}>
+            <FontAwesomeIcon icon={faCopy} />
+          </span>
+        </div>
+        <ToastContainer
+          position='top-right'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={true}
+          closeOnClick
+          draggable
+        />
+      </>
     )
   }
 }
