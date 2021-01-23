@@ -15,12 +15,12 @@ npm install --save copytoclipboard
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'copytoclipboard'
+import CopyToCLipBoard from 'copytoclipboard'
 import 'copytoclipboard/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <CopyToCLipBoard />
   }
 }
 ```
