@@ -31,7 +31,7 @@ class Example extends Component {
 }
 ```
 
-# Dem0
+# Demo
 
 https://sayumani.github.io/copytoclipboard/
 
