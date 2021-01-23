@@ -20,4 +20,5 @@ div.test:hover {
 
 div.test:hover > .copy_icon {
   display: inline;
+  margin-left: 5px;
 }
