@@ -23,6 +23,15 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
+  "keywords": [
+    "angular",
+    "copytoclipboard",
+    "react-copytoclipboard",
+    "copytoclipboard-react",
+    "react-copy-to-clipboard",
+    "copy-to-clipboard-react",
+    "copy to clipboard"
+  ],
   "peerDependencies": {
     "react": "^16.0.0"
   },
