@@ -15,8 +15,8 @@ npm install --save copy-to-clipboard-react
 ```jsx
 import React, { Component } from 'react'
 
-import CopyToCLipBoard from 'copytoclipboard'
-import 'copytoclipboard/dist/index.css'
+import CopyToCLipBoard from 'copy-to-clipboard-react'
+import 'copy-to-clipboard-react/dist/index.css'
 
 class Example extends Component {
   render() {
