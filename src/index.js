@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.css'
-import 'react-toastify/dist/ReactToastify.css'
 
 class CopyToCLipBoard extends React.Component {
   onClick = async (event) => {
